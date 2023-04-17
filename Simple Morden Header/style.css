@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    border: none;
+    color: #ffff;
+}
+body{
+    background: linear-gradient(to right, #094282, #6d00ff 70%, #6d00ff 70%);
+    position: relative; 
+}
+.container{
+    width: 90%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    height: 5rem;
+    display: grid;
+    place-items: center;  
+    width: 100%;
+    position: fixed;
+    z-index: 10;    
+}
+.logo h3{
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+.logo h3 span{
+    color: #ffc72f;
+}
+ul{
+    display: flex;
+    gap: 3rem;
+}
+ul li a{
+    font-size: 17px;
+    font-weight: 100;
+    color: #ffff;
+}
+nav a{
+    font-size: 20px;
+    font-weight: 100;  
+    transition: .4s ease;
+}
+nav a:hover{
+    color: #ffc72f;  
+}
+.header-container{
+    display: grid;
+    grid-template-columns: 48% 32% 15%;
+    gap: 5%;  
+    padding-top: 10rem;  
+    align-items: center;    
+}
+img{
+    width: 100%;
+    display: block;
+}
+h1{
+    font-size: 70px;  
+    line-height: 90px;
+    margin-bottom: .9rem;
+}
+p{
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.btn-aria{
+    display: flex;
+    gap: 2rem;
+}
+.btn{
+    display: inline-block;
+    padding: 20px 40px;
+    background: #ffff;
+    color: black; 
+    font-weight: 500;
+    cursor: pointer;  
+    border: 1px solid #ffff;
+    border-radius: 2rem;
+    transition: .4s ease;
+}
+.btn:hover{
+    background: none;
+    color: #ffff;
+}
+.btn-primary{
+    background: #5957cf;
+    border: 1px solid #5957cf;
+    color: #ffff;
+    animation: infinite btn-Ani 5s ease;
+}
+.btn-primary:hover{
+    color: #5957cf;
+    background: #ffff;   
+}
+.header-mid{
+    position: relative;
+    background: linear-gradient(to right, #094282, #ffc72f 70%, #ffc72f 70%);
+    border-top-left-radius: 200px;    
+    border-top-right-radius: 200px;   
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+.resent-project{
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+    font-size: 17px;
+}
+.resent-project img{
+    width: 2rem;
+    transform: rotate(-90deg);
+}
+.extra-bg{
+    position: absolute;
+    width: 34%;
+    height: 100vh;
+    background: linear-gradient(#8569ff, #006786);
+    right: 0;
+    top: 0; 
+}
+
+@keyframes btn-Ani {
+    to{
+        filter: hue-rotate(360deg);
+    }    
+}
